@@ -307,16 +307,6 @@ var loadConfig = function(callback) {
             base_url:"http://data.honolulu.gov/api/resource/yef5-h88r.json"};
 
     callback(data);
-/*
-
-  $.ajax({
-      url: '/config',
-      dataType: 'jsonp',
-      success: function (data, textStatus, jqXHR) {
-        callback(data);
-      }
-  });
-*/
 };
 
 // Setup the images for a given piece of art
