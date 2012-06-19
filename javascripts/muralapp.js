@@ -2,7 +2,6 @@ var Mural = {};
 
 (function(m){
   m.App = function(options) {
-    console.log(config.default_lat);
     var defaultCenter = {};
     defaultCenter.lat = config.default_lat || 37.7749295;
     defaultCenter.lng = config.default_lng || -122.4194155;
@@ -203,7 +202,6 @@ var Mural = {};
             },
             function(msg){
               alert('We couldn\'t locate your position.');
-              console.log(msg);
             },
             { enableHighAccuracy: true, maximumAge: 90000 });
         }
@@ -333,7 +331,6 @@ var setImages = function (mural) {
     } else {                                        // No image :(
         mural.imgs.push('images/noimage.png');
     }
-    //console.log(mural.thumb);
     return mural;
 };
 

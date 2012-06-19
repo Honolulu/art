@@ -1,3 +1,4 @@
+
 (function(m){
   m.Details = function(options) {
     var _options = $.extend({
