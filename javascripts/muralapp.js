@@ -288,7 +288,6 @@ var app, config;
 $('#map-page').live('pagecreate',function(event){
     loadConfig(function(c) {
       config = c;
-      setupGA();
       $('#city_name').text(config.city_name);
       $('#brought_to_you_by').text(config.brought_to_you_by);
       app = app || Mural.App();
