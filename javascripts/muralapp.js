@@ -12,7 +12,7 @@ var Mural = {};
         detailHeader: '#detail-header',
         muralIcon: 'images/mosaic-marker.png',
         locationIcon: 'images/location-icon-pin-32.png',
-        base_url: "http://data.honolulu.gov/api/resource/yef5-h88r.json"
+        base_url: "http://socrataproxy.herokuapp.com/api/resource/yef5-h88r.json"
     }, options),
     //Map Styles
     _mapTypeName = 'Map',
