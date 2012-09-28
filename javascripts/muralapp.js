@@ -12,7 +12,7 @@ var Mural = {};
         detailHeader: '#detail-header',
         muralIcon: 'images/mosaic-marker.png',
         locationIcon: 'images/location-icon-pin-32.png',
-        base_url: "http://socrataproxy.herokuapp.com/api/resource/yef5-h88r.json"
+        base_url: "http://data.honolulu.gov/api/resource/yef5-h88r.json"
     }, options),
     //Map Styles
     _mapTypeName = 'Map',
@@ -226,7 +226,7 @@ var Mural = {};
             data:{"$where": "longitude > "+bbox.minx+' AND latitude > '+bbox.miny+' AND longitude < '+bbox.maxx+' AND latitude <'+bbox.maxy},
             crossDomain: true,
             dataType: 'jsonp',
-            jsonp: "jsonp",
+            jsonp: "$callback",
             success: function (data, textStatus, jqXHR) {
                 var imgArray, i;
                 _murals = data;

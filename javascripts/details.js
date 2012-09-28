@@ -15,7 +15,7 @@
             url: 'http://data.honolulu.gov/api/resource/yef5-h88r.json?objectid='+id,
             crossDomain: true,
             dataType: 'jsonp',
-            jsonp:"jsonp",
+            jsonp:"$callback",
             success: function (mural, textStatus, jqXHR) {
                 mural = mural[0];
                 // Structure the data a bit
